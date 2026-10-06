@@ -1,0 +1,17 @@
+{
+  "pessoas": [
+    {
+      "id": 1,
+      "nome": "Bruno",
+      "sobrenome": "Fraudio",
+      "email": "bruno@email.com",
+      "idade": 30,
+      "telefone": "(11) 99999-9999",
+      "rua": "Rua das Flores, 100",
+      "bairro": "Centro",
+      "cidade": "São Paulo",
+      "estado": "SP",
+      "rg": "12.345.678-9"
+    }
+  ]
+}

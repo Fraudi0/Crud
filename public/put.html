@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar - PUT</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="post.html">Cadastrar</a>
+        <a href="get.html">Listar</a>
+        <a href="put.html">Editar</a>
+        <a href="delete.html">Excluir</a>
+    </nav>
+
+    <div class="container">
+        <h1>Editar Pessoa (PUT)</h1>
+
+        <label for="selecionar">Escolha quem deseja editar</label>
+        <select id="selecionar" onchange="carregarPessoa()" style="width:100%; padding:8px; margin-top:4px">
+            <option value="">Selecione</option>
+        </select>
+
+        <div id="formEdicao" style="display:none">
+            <div class="linha">
+                <div>
+                    <label for="nome">Nome</label>
+                    <input type="text" id="nome">
+                </div>
+                <div>
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" id="sobrenome">
+                </div>
+            </div>
+
+            <label for="email">Email</label>
+            <input type="email" id="email">
+
+            <div class="linha">
+                <div>
+                    <label for="idade">Idade</label>
+                    <input type="number" id="idade">
+                </div>
+                <div>
+                    <label for="telefone">Telefone</label>
+                    <input type="text" id="telefone">
+                </div>
+            </div>
+
+            <label for="rua">Rua</label>
+            <input type="text" id="rua">
+
+            <div class="linha">
+                <div>
+                    <label for="bairro">Bairro</label>
+                    <input type="text" id="bairro">
+                </div>
+                <div>
+                    <label for="cidade">Cidade</label>
+                    <input type="text" id="cidade">
+                </div>
+                <div>
+                    <label for="estado">Estado</label>
+                    <input type="text" id="estado" maxlength="2">
+                </div>
+            </div>
+
+            <label for="rg">RG</label>
+            <input type="text" id="rg">
+
+            <button onclick="atualizar()">Salvar Alterações</button>
+        </div>
+
+        <p id="mensagem"></p>
+    </div>
+
+    <script src="put/put.js"></script>
+</body>
+</html>

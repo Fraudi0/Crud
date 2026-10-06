@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listar - GET</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="post.html">Cadastrar</a>
+        <a href="get.html">Listar</a>
+        <a href="put.html">Editar</a>
+        <a href="delete.html">Excluir</a>
+    </nav>
+
+    <div class="container" style="max-width: 1100px">
+        <h1>Lista de Pessoas (GET)</h1>
+        <p id="mensagem"></p>
+
+        <div class="tabela-wrap">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nome</th>
+                        <th>Sobrenome</th>
+                        <th>Email</th>
+                        <th>Idade</th>
+                        <th>Telefone</th>
+                        <th>Rua</th>
+                        <th>Bairro</th>
+                        <th>Cidade</th>
+                        <th>Estado</th>
+                        <th>RG</th>
+                    </tr>
+                </thead>
+                <tbody id="listaPessoas"></tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="get/get.js"></script>
+</body>
+</html>
